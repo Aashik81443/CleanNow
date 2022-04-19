@@ -13,6 +13,20 @@ $(document).ready(function () {
 
     initBgCover();
 
+    /* smooth scroll*/
+    $('a.js-has-smooth[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+
     //testimonial-slider
     $('.testimonial-slider').slick({
         infinite: true,
@@ -20,7 +34,7 @@ $(document).ready(function () {
         arrows: false,
         slidesToShow: 1,
         adaptiveHeight: true,
-        slidesToScroll: 1,     
+        slidesToScroll: 1,
     });
 
     //aos
@@ -53,5 +67,5 @@ $(document).ready(function () {
             }
         ]
     });
-  
+
 });
