@@ -1,0 +1,20 @@
+//block-title
+.block-title {
+    h2 {
+        color: $moderate-cyan;
+        font-weight: 500;
+        @include font-size(1.5rem);
+
+        @include media-breakpoint-up(md) {
+            @include font-size(1.8rem);
+        }
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(2rem);
+        }
+
+        @include media-breakpoint-up(xl) {
+            @include font-size(2.25rem);
+        }
+    }
+}

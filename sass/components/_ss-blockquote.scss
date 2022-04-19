@@ -1,0 +1,48 @@
+//blockquote
+.blockquote {
+    max-width: 906px;
+    margin: 0 auto;
+
+    &-author {
+        display: inline-block;
+        border-radius: 50%;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '\e97e';
+            font-family: 'icomoon';
+            left: 0;
+            bottom: 10px;
+            background-color: $white;
+            color: $moderate-cyan;
+            line-height: 1;
+            padding: 0.5rem;
+            border-radius: 50%;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &-content {
+        @include font-size(1rem);
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(1.125rem);
+        }
+        h3 {
+            color: $white;
+            background-color: $moderate-cyan;
+            margin-bottom: 0;
+            padding: 0.5rem;
+            text-transform: capitalize;
+            @include font-size(1rem);
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(1.125rem);
+            }
+        }
+    }
+}

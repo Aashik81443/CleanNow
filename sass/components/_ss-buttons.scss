@@ -1,0 +1,89 @@
+//buttons
+.btn {
+    @include font-size(0.875rem);
+    font-weight: 500;
+    border: 1px solid transparent;
+    min-width: 160px;
+    background-color: $white;
+    color: $black;
+    text-transform: capitalize;
+    border-radius: 35px;
+    transition: all 0.3s ease-in-out;
+    padding: 0.8rem 0.8rem;
+
+
+    @include media-breakpoint-up(lg) {
+        @include font-size(1rem);
+        padding: 1rem 0.8rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 1.08rem 0.8rem;
+    }
+
+    &.btn-primary {
+        color: $white;
+        background-color: $moderate-cyan;
+
+        @include media-breakpoint-up(md) {
+            min-width: 170px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            min-width: 180px;
+
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-width: 190px;
+            padding: 1.08rem 0.8rem;
+        }
+
+        &:focus,
+        &:hover {
+            border-color: $moderate-cyan;
+            color: $moderate-cyan;
+            background-color: $white;
+        }
+
+        &--alt {
+            background-color: $white;
+            color: $moderate-cyan;
+            border-color: $moderate-cyan;
+
+            &:focus,
+            &:hover {
+                border-color: $white;
+                color: $white;
+                background-color: $moderate-cyan;
+            }
+        }
+
+    }
+
+    &.btn-secondary {
+        color: $moderate-cyan;
+        background-color: $white;
+        border-color: $moderate-cyan;
+        min-width: 170px;
+
+        @include media-breakpoint-up(md) {
+            min-width: 185px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            min-width: 200px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-width: 220px;
+        }
+
+        &:focus,
+        &:hover {
+            border-color: $moderate-cyan;
+            color: $white;
+            background-color: $moderate-cyan;
+        }
+    }
+}

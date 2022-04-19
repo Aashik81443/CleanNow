@@ -1,0 +1,168 @@
+.site-footer {
+    .row {
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+        }
+    }
+
+    &__content {
+        @include font-size(0.875rem);
+
+        .copyright {
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+
+            a {
+
+                &:focus,
+                &:hover {
+                    color: $moderate-cyan;
+                    text-decoration: none;
+                }
+
+            }
+        }
+    }
+
+    .quick-menu,
+    .services,
+    .contact {
+
+        @include media-breakpoint-down(md) {
+            margin-top: 1rem
+        }
+
+        h4 {
+            @include font-size(1.0625rem);
+            font-weight: 700;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+
+    .quick-menu {
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+
+        ul {
+            padding-left: 0;
+
+            li {
+                list-style-type: none;
+                line-height: 1.7;
+
+                @include media-breakpoint-down(md) {
+                    display: inline-block;
+                    padding-right: 0.5rem;
+                }
+
+                a {
+                    color: $gray-700;
+                    @include font-size(0.875rem);
+
+                    &:focus,
+                    &:hover {
+                        color: $moderate-cyan;
+                        text-decoration: none;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .services {
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+
+        ul {
+            padding-left: 0;
+
+            li {
+                color: $gray-700;
+                @include font-size(0.875rem);
+                list-style-type: none;
+                margin-bottom: 0.2rem;
+
+                @include media-breakpoint-down(md) {
+                    display: inline-block;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .contact {
+        ul {
+            padding-left: 0;
+
+            li {
+                color: $gray-700;
+                @include font-size(0.875rem);
+                list-style-type: none;
+
+                a {
+                    color: $gray-700;
+
+                    &:focus,
+                    &:hover {
+                        color: $moderate-cyan;
+                        text-decoration: none;
+                    }
+
+                }
+            }
+        }
+
+        .social-links {
+            ul {
+                padding-left: 0;
+
+                li {
+                    list-style-type: none;
+                    display: inline-block;
+                    padding: 0;
+
+                    a {
+                        color: $moderate-cyan;
+                        @include font-size(1.25rem);
+                        padding: 0 0.5rem 0.5rem 0.5rem;
+                        line-height: 1;
+                        transition: all 0.3s ease-in-out;
+
+                        &:focus,
+                        &:hover {
+                            text-decoration: none;
+                            color: $gray-700;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .copyright-1 {
+            @include font-size(0.875rem);
+
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+
+            a {
+
+                &:focus,
+                &:hover {
+                    color: $moderate-cyan;
+                    text-decoration: none;
+                }
+
+            }
+        }
+    }
+}
