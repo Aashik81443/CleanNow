@@ -14305,6 +14305,7 @@ iframe {
 .site-header__top .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .site-header__top .title span {
@@ -14314,6 +14315,7 @@ iframe {
 
 .site-header__top .links ul {
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 .site-header__top .links ul li {
