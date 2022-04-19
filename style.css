@@ -13936,17 +13936,15 @@ iframe {
   font-size: 0.875rem;
 }
 
-.card-pricing__footer {
-  background-color: #38ADA9;
-  padding: 0.5rem;
-  transition: all 0.3s ease-in-out;
-}
-
 .card-pricing__footer a {
+  background-color: #38ADA9;
+  transition: all 0.3s ease-in-out;
   color: #fff;
+  padding: 0.5rem;
   text-transform: capitalize;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
+  display: block;
 }
 
 .card-pricing__footer:focus a, .card-pricing__footer:hover a {

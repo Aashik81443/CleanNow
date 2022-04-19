@@ -234,15 +234,15 @@
         }
 
         &__footer {
-            background-color: $moderate-cyan;
-            padding: 0.5rem;
-            transition: all 0.3s ease-in-out;
-
             a {
+                background-color: $moderate-cyan;
+                transition: all 0.3s ease-in-out;
                 color: $white;
+                padding: 0.5rem;
                 text-transform: capitalize;
                 font-weight: 500;
                 transition: all 0.3s ease-in-out;
+                display: block;
             }
 
             &:focus,
